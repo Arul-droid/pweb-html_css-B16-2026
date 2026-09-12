@@ -11,28 +11,30 @@
     <link rel="stylesheet" href="porto.css">
 </head>
 
-<body>
+<body class="portfolio-page">
 
-    <!-- Navbar -->
-    <nav class="navbar">
-        <div class="logo">
-            PRABOWO<span>.</span>
-        </div>
-        <div class="menu">
-            <a href="index.html" class="active">Home</a>
-            <a href="cv.html">CV</a>
-        </div>
-    </nav>
+    <header>
+        <nav class="navbar" aria-label="Navigasi utama">
+            <div class="logo">
+                PRABOWO<span>.</span>
+            </div>
+            <div class="menu">
+                <a href="index.html" class="active" aria-current="page">Home</a>
+                <a href="#pengabdian">Pengabdian</a>
+                <a href="#program">Program</a>
+                <a href="cv.html">CV</a>
+            </div>
+        </nav>
+    </header>
 
-
-    <!-- Hero -->
-    <section class="hero">
+    <main>
+        <section class="hero" aria-labelledby="hero-title">
 
         <div class="hero-text">
 
             <p>PROFIL TOKOH NASIONAL</p>
 
-            <h1>
+            <h1 id="hero-title">
                 Prabowo<br>
                 Subianto
             </h1>
@@ -44,7 +46,7 @@
             </p>
             <!-- ini CTA ke halaman CV -->
             <a href="cv.html" class="button">
-                Lihat Creative CV →
+                Lihat Curriculum Vitae →
             </a>
         </div>
 
@@ -53,20 +55,18 @@
             <img src="foto/fotoprabowo1.jpeg" alt="Foto Prabowo Subianto">
         </div>
 
-    </section>
+        </section>
 
-
-<!-- ABOUT / PILAR REKAM JEJAK -->
-    <section class="about">
+        <section class="about" id="pengabdian" aria-labelledby="pengabdian-title">
         <div class="section-title">
-            <h2>Pilar Pengabdian</h2>
+            <h2 id="pengabdian-title">Pilar Pengabdian</h2>
             <p>Tiga bidang utama perjalanan karier dan kontribusi bagi bangsa</p>
         </div>
 
         <div class="about-container">
             <div class="card">
                 <div class="card-image">
-                    <img src="foto/fotoprabowocv.jpeg" alt="Militer">
+                    <img src="foto/fotoprabowocv.jpeg" alt="Prabowo Subianto dalam kegiatan militer" loading="lazy">
                 </div>
                 <div class="card-content">
                     <h3>Militer & Pertahanan</h3>
@@ -79,7 +79,7 @@
 
             <div class="card">
                 <div class="card-image">
-                    <img src="foto/fotoprabowo1.jpeg" alt="Politik">
+                    <img src="foto/fotoprabowo1.jpeg" alt="Prabowo Subianto dalam kegiatan politik" loading="lazy">
                 </div>
                 <div class="card-content">
                     <h3>Kepemimpinan Politik</h3>
@@ -92,7 +92,7 @@
 
             <div class="card">
                 <div class="card-image">
-                    <img src="foto/fotoprabowocv.jpeg" alt="Pemerintahan">
+                    <img src="foto/fotoprabowocv.jpeg" alt="Prabowo Subianto dalam kegiatan pemerintahan" loading="lazy">
                 </div>
                 <div class="card-content">
                     <h3>Pemerintahan</h3>
@@ -103,7 +103,89 @@
                 </div>
             </div>
         </div>
-    </section>
+        </section>
+
+        <section class="program" id="program" aria-labelledby="program-title">
+        <div class="section-title">
+            <h2 id="program-title">Karya & Program</h2>
+            <p>Program-program yang sudah dilaksanakan</p>
+        </div>
+
+        <div class="program-container">
+            <div class="card">
+                <div class="card-image">
+                    <img src="foto/fotoprabowocv.jpeg" alt="Kegiatan Makan Bergizi Gratis" loading="lazy">
+                </div>
+                <div class="card-content">
+                    <h3>Makan Bergizi Gratis (MBG)</h3>
+                    <p>
+                        Penyaluran menu makanan bernutrisi kepada para siswa di sekolah-sekolah.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-image">
+                    <img src="foto/fotoprabowo1.jpeg" alt="Kegiatan Cek Kesehatan Gratis" loading="lazy">
+                </div>
+                <div class="card-content">
+                    <h3>Cek Kesehatan Gratis (CKG)</h3>
+                    <p>
+                        Pelaksanaan skrining dan pemeriksaan kondisi fisik masyarakat secara cuma-cuma melalui fasilitas kesehatan tingkat pertama.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-image">
+                    <img src="foto/fotoprabowocv.jpeg" alt="Pembentukan Badan Pengelola Investasi Danantara" loading="lazy">
+                </div>
+                <div class="card-content">
+                    <h3>Pembentukan Badan Pengelola Investasi Danantara</h3>
+                    <p>
+                        Aktivitas dan kelembagaan Badan Pengelola Investasi Daya Anagata Nusantara (Danantara) dalam mengonsolidasikan aset-aset investasi strategis negara.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-image">
+                    <img src="foto/fotoprabowocv.jpeg" alt="Distribusi pupuk bersubsidi" loading="lazy">
+                </div>
+                <div class="card-content">
+                    <h3>Penurunan Harga dan Distribusi Pupuk Bersubsidi</h3>
+                    <p>
+                        Penyaluran pasokan pupuk bersubsidi langsung ke gudang kelompok tani dan para petani di daerah.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-image">
+                    <img src="foto/fotoprabowocv.jpeg" alt="Renovasi sekolah dan digitalisasi pendidikan" loading="lazy">
+                </div>
+                <div class="card-content">
+                    <h3>Renovasi Sekolah dan Digitalisasi Pendidikan</h3>
+                    <p>
+                        Pengerjaan perbaikan ruang kelas yang rusak agar layak digunakan untuk kegiatan belajar mengajar.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-image">
+                    <img src="foto/fotoprabowocv.jpeg" alt="Penertiban konsesi tambang dan perkebunan ilegal" loading="lazy">
+                </div>
+                <div class="card-content">
+                    <h3>Penertiban Konsesi Tambang dan Perkebunan Ilegal</h3>
+                    <p>
+                        Operasi penegakan hukum di lapangan oleh aparat gabungan untuk menghentikan aktivitas penambangan tanpa izin di area hutan negara.
+                    </p>
+                </div>
+            </div>
+        </div>
+        </section>
+    </main>
 
 
 <!-- FOOTER -->
@@ -119,4 +201,3 @@
 </body>
 
 </html>
-

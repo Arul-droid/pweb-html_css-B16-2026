@@ -225,3 +225,66 @@
         font-size: 2.4rem;
     }
 }
+
+/* --- HOMEPAGE OVERRIDES --- */
+.portfolio-page .hero {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.portfolio-page .about-container,
+.portfolio-page .program-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 30px;
+}
+
+.portfolio-page .card {
+    padding: 0;
+}
+
+.portfolio-page .program {
+    padding: 80px 8%;
+    background-color: #f8f9fa;
+}
+
+.portfolio-page .program .section-title {
+    margin-bottom: 40px;
+}
+
+.portfolio-page .button:focus-visible,
+.portfolio-page .menu a:focus-visible {
+    outline: 3px solid #d6b25e;
+    outline-offset: 3px;
+}
+
+@media (max-width: 992px) {
+    .portfolio-page .hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding: 40px 5%;
+    }
+
+    .portfolio-page .hero-text > p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .portfolio-page .about-container,
+    .portfolio-page .program-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 576px) {
+    .portfolio-page .about-container,
+    .portfolio-page .program-container {
+        grid-template-columns: 1fr;
+    }
+
+    .portfolio-page .menu {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+}
